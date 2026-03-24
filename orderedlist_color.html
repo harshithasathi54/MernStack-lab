@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* Universal selector */
+    * {
+        font-family: Arial;
+    }
+
+    /* Element selector */
+    p {
+        color: blue;
+    }
+
+    /* ID selector */
+    #mainHeading {
+        color: rgba(224, 74, 14, 0.951);
+    }
+
+    /* Class selector */
+    .highlight {
+        background-color: lightpink;
+    }
+
+    /* Descendant selector */
+    div p {
+        color: brown;
+    }
+
+    /* Child selector */
+    ul > li {
+        color: green;
+    }
+
+    /* Adjacent sibling selector */
+    h1 + p {
+        background-color: yellow;
+    }
+
+    /* General sibling selector */
+    h2 ~ p {
+        border: 2px solid purple;
+    }
+</style>
+</head>
+
+<body>
+
+<h1 id="mainHeading">ID Selector Example</h1>
+<p>This paragraph comes immediately after h1 (adjacent sibling).</p>
+
+<h2>General Sibling Example</h2>
+<p>This paragraph is a general sibling of h2.</p>
+<p class="highlight">This paragraph is also affected by h2 ~ p.</p>
+
+<div>
+    <p>Descendant selector inside div</p>
+</div>
+
+<ul>
+    <li>Child 1</li>
+    <li>Child 2</li>
+</ul>
+
+<p class="highlight">Class selector example</p>
+
+</body>
+</html>

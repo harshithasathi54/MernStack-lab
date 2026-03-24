@@ -1,0 +1,12 @@
+var studentName = "harshitha";
+var age = 20;
+var isPresent = true;
+var data1 = "Hello";
+data1 = 123;
+var x = 100;
+var data2 = "TypeScript";
+console.log(studentName);
+console.log(age);
+console.log(isPresent);
+console.log(data1);
+console.log(data2);

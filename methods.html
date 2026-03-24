@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Output Methods</title>
+</head>
+<body>
+<h2>JavaScript Output Methods</h2>
+<p id="demo">ii</p>
+<button onclick="showOutput()">ClickMe</button>
+<script>
+function showOutput(){
+    //1.Alert box
+    alert("This is an alert Message!");
+    //2.write on the web page
+    document.getElementById("demo").innerHTML="This is written on the webpage.";
+    //3.console output
+    console.log("This is written in the console.");
+    //4.Document write (safe demo inside a new window)
+    let win=window.open("","","width=300,height=200");
+    win.document.write("This text is from document.write()");
+}
+</script>
+</body>
+</html>
